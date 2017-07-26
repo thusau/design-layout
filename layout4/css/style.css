@@ -1,0 +1,43 @@
+/* Author Thusau */
+* {
+  box-sizing: border-box;
+}
+
+header, footer {
+  width: 100%;
+  min-height: 150px;
+  background-color: blue;
+  clear: both;
+}
+
+section {
+  width: 70%;
+  min-height: 500px;
+  background-color: green;
+  margin-top: 10px;
+  float: left;
+}
+
+aside {
+  width: 30%;
+  min-height: 500px;
+  padding-left: 20px;
+  margin-top: 10px;
+  float: right;
+}
+
+.sizebar {
+  width: auto;
+  min-height: 150px;
+  background-color: pink;
+  margin-bottom: 20px;
+  
+ /* @Media width */
+  @media screen and (min-width: 1024px) {
+    body { width: 100%;}
+  }
+  
+  @media screen and (max-width: 768px) {
+    section { width: 100%; float: none;}
+    aside { width: 100%; float: none; padding-left: 0px;}
+  }
