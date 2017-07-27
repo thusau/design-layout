@@ -1,5 +1,8 @@
 /* Author Thusau */
-* {
+
+ /* @Media width PC & table 10" */
+@media screen and (min-width: 1200px) {
+  * {
   box-sizing: border-box;
 }
 
@@ -26,18 +29,89 @@ aside {
   float: right;
 }
 
+  
 .sizebar {
   width: auto;
   min-height: 150px;
   background-color: pink;
   margin-bottom: 20px;
+   }
+}
+@media screen and (min-width:992px) and (max-width:1199px){
   
- /* @Media width */
-  @media screen and (min-width: 1024px) {
-    body { width: 100%;}
-  }
+}
+@media screen and (min-width:768px)  and (max-width:1199px){
+  * {
+  box-sizing: border-box;
+}
+
+header, footer {
+  width: 100%;
+  min-height: 150px;
+  background-color: blue;
+  clear: both;
+}
+
+section {
+  width: 100%;
+  min-height: 500px;
+  background-color: green;
+  margin-top: 10px;
   
-  @media screen and (max-width: 768px) {
-    section { width: 100%; float: none;}
-    aside { width: 100%; float: none; padding-left: 0px;}
-  }
+}
+
+aside {
+  width: 100%;
+  min-height: 150px;
+  margin-top: 10px ;
+  
+}
+
+  
+.sizebar {
+  width: 33%;
+  min-height: 150px;
+  background-color: pink;
+  margin: 20px auto ;
+  margin-top: 0;
+  display: inline-block;
+  
+   }
+}
+@media screen and (max-width:767px){
+  * {
+  box-sizing: border-box;
+}
+
+header, footer {
+  width: 100%;
+  min-height: 150px;
+  background-color: blue;
+  clear: both;
+}
+
+section {
+  width: 100%;
+  min-height: 500px;
+  background-color: green;
+  margin-top: 10px;
+  
+}
+
+aside {
+  width: 100%;
+  min-height: 150px;
+  margin-top: 10px ;
+  
+}
+
+  
+.sizebar {
+  width: auto;
+  min-height: 150px;
+  background-color: pink;
+  margin: 20px auto ;
+  margin-top: 0;
+     }
+}
+  
